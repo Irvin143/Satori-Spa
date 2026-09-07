@@ -6,6 +6,7 @@ export async function obtenerCategorias() {
         .from("tipos_servicio")
         .select("id, nombre");
         
+        
         if (error) {
             console.error("Error al obtener categorías:", error);
             return { success: false, error: error.message };
